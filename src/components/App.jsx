@@ -21,22 +21,11 @@ export const App = () => {
 
     const action = addContact(contact);
     dispatch(action);
-    // setContacts((prev) => {
-    //   const newContact = {
-    //     id: nanoid(),
-    //     ...contact
-    //   }
-    //   return [...prev, newContact]
-    // })
   }
 
   const onRemoveContact = (id) => {
     const action = removeContact(id);
     dispatch(action);
-    // setContacts((prev) => {
-    //   const newContacts = prev.filter((contact) => contact.id !== id);
-    //   return newContacts;
-    // })
   }
 
   const handleChange = (e) => {
